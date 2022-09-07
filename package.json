@@ -89,6 +89,7 @@
   "dependencies": {
     "@reduxjs/toolkit": "^1.8.5",
     "axios": "^0.27.2",
+    "cosmjs-types": "^0.5.1",
     "cosmwasm": "^1.1.1",
     "i18next": "^21.9.1",
     "i18next-http-backend": "^1.4.1",

@@ -4,11 +4,11 @@ import { useEffect } from 'react'
 
 const Index = () => {
   const cos: Cosmwasm = new Cosmwasm()
-  const connect = async () => {
-    const client = await cos.connect()
+  const test = async () => {
+    const client = await cos.test()
   }
   useEffect(() => {
-    connect()
+    test()
   }, [])
   return <div className='flex flex-col items-center py-2'>test</div>
 }
