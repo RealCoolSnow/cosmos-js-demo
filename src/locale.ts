@@ -3,8 +3,7 @@ import { initReactI18next } from 'react-i18next'
 import Backend from 'i18next-http-backend'
 import en from './locales/en.json'
 import cn from './locales/cn.json'
-import { useSelector } from 'react-redux'
-import { RootState } from './store'
+import { isDebug } from './constants'
 
 const resources = {
   en: {
@@ -23,7 +22,7 @@ i18n
   .init({
     fallbackLng: DefaultLanguage,
     lng: DefaultLanguage,
-    debug: true,
+    debug: isDebug,
     resources,
     interpolation: {
       escapeValue: false
